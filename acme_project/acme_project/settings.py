@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'birthday.apps.BirthdayConfig',
     'pages.apps.PagesConfig',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -30,6 +31,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'acme_project.urls'
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 TEMPLATES_DIR = BASE_DIR / 'templates'
 
@@ -75,11 +78,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 
